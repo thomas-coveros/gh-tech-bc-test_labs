@@ -13,6 +13,9 @@ steps:
 - script: echo Hello, I am pipeline 2! $(VALET_TEST)
   displayName: 'Run a one-line script'
 
+- script: echo Hello, I am a secret $(VALETSECRETTEST)
+  displayName: 'Run a secret'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
